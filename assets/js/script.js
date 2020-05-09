@@ -25,7 +25,7 @@ function getUVI(lat,lon) {
 
 
         // var to hold API URL
-        var queryURL3 = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat +"&lon=" + lon +"&appid=" + APIKey;
+        var queryURL3 = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat +"&lon=" + lon +"&appid=" + APIKey;
         
         //AJAX call 
         $.ajax({
