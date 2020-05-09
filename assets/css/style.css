@@ -1,0 +1,53 @@
+body {
+display: flexbox;
+}
+
+.jumbotron {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: center;
+    border-radius: 0;
+    padding: .5rem;
+} 
+
+#sidebar-col {
+    background-color: rgb(187, 187, 187);
+
+
+}
+.form-inline {
+    margin: 1rem;
+   
+}
+.form-control{
+ width
+}
+.submit-btn{
+ 
+}
+
+.btn-group-vertical{
+
+
+}
+.city-btn{
+    width: ;
+    padding: 2rem 4rem;
+    margin: .5rem;
+}   
+.card {
+    width: 97%;
+}
+.data-item {
+    padding: 2rem
+}
+.fore-row {
+    display: inline-flex;
+}
+.forecast {
+   background-color: rgb(106, 153, 255);
+   padding 1rem;
+   margin: 1.2rem;
+ 
+ 
+}
