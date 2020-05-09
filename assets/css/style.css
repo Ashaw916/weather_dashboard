@@ -1,9 +1,10 @@
 body {
 display: flexbox;
+background-color: rgb(41, 41, 41);
 }
 
 .jumbotron {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(66, 66, 66);
     color: white;
     text-align: center;
     border-radius: 0;
@@ -11,24 +12,22 @@ display: flexbox;
 } 
 
 #sidebar-col {
-    background-color: rgb(187, 187, 187);
-
-
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: .5rem;
+    height: 75%;
 }
 .form-inline {
     margin: 1rem;
-   
 }
 .form-control{
  width
 }
 .submit-btn{
- 
+/*  */
 }
-
 .btn-group-vertical{
-
-
+/*  */
 }
 .city-btn{
     width: ;
@@ -36,18 +35,30 @@ display: flexbox;
     margin: .5rem;
 }   
 .card {
+    background-color: rgb(93, 93, 93);
+    color: white;
     width: 97%;
+    border-radius: .5rem;
 }
 .data-item {
-    padding: 2rem
+    padding: 1rem
+}
+#icon {
+    margin-left: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 .fore-row {
     display: inline-flex;
+    margin: 0;
 }
 .forecast {
-   background-color: rgb(106, 153, 255);
-   padding 1rem;
+   background-color: rgb(0, 79, 144);
+   color: white;
+   padding: 1rem;
    margin: 1.2rem;
- 
- 
+   border-radius: .5rem;
+}
+.hide {
+    display: none;
 }
