@@ -36,7 +36,7 @@ function getUVI(lat,lon) {
         .then(function(response) {
             console.log(response)
             $("#uvi").text("UV Index: " + response.value);
-
+            //change color based on index
             if (response.value < "3"){
                 $("#uvi").attr("style", "background-color:blue");
             }
@@ -92,7 +92,7 @@ $(document).ready(function() {
             // link to html tags, add and show weather icon
             $("#city").text(response.name + " (" + moment().format('MMMM Do YYYY') + ")" );
             $("#icon")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#temp").text("Temp: " +  ((response.main.temp - 273.15) * 1.80 + 32).toFixed(2) + "ºF");
             $("#humid").text("Humidity: " + response.main.humidity + "%");
@@ -127,19 +127,19 @@ $(document).ready(function() {
             $("#fDate5").text(response.list[6].dt_txt);
             //add weather icons
             $("#fIcon1")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon2")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[1].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[1].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon3")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[2].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[2].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon4")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon5")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + "@2x.png")
             .removeClass("hide");
             //add temp
             $("#fTemp1").text(((response.list[0].main.temp- 273.15) * 1.80 + 32).toFixed(2) + "ºF");
@@ -190,7 +190,7 @@ $(document).ready(function() {
             // link to html tags, add and show weather icon
             $("#city").text(response.name + " (" + moment().format('MMMM Do YYYY') + ")" );
             $("#icon")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#temp").text("Temp: " +  ((response.main.temp - 273.15) * 1.80 + 32).toFixed(2) + "ºF");
             $("#humid").text("Humidity: " + response.main.humidity + "%");
@@ -225,19 +225,19 @@ $(document).ready(function() {
             $("#fDate5").text(response.list[6].dt_txt);
             //add weather icons
             $("#fIcon1")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon2")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[1].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[1].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon3")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[2].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[2].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon4")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + "@2x.png")
             .removeClass("hide");
             $("#fIcon5")
-            .attr("src", "http://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + "@2x.png")
+            .attr("src", "https://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + "@2x.png")
             .removeClass("hide");
             //add temp
             $("#fTemp1").text(((response.list[0].main.temp- 273.15) * 1.80 + 32).toFixed(2) + "ºF");
