@@ -43,6 +43,10 @@ background-color: rgb(41, 41, 41);
 .data-item {
     padding: 1rem
 }
+#uvi {
+    padding: 1rem;
+    width: 15rem;
+}
 #icon {
     margin-left: 2rem;
     width: 3rem;
